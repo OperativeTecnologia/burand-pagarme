@@ -1,6 +1,7 @@
 import { CreateCard } from './CreateCard.js';
 import { CreateCustomer } from './CreateCustomer.js';
 import { CreateSubscriptionItem } from './CreateSubscriptionItem.js';
+import { CreateSubscriptionSplit } from './CreateSubscriptionSplit.js';
 export interface CreateSubscription {
     billing_type?: 'prepaid';
     card_id?: string;
@@ -16,5 +17,6 @@ export interface CreateSubscription {
     items?: CreateSubscriptionItem[];
     payment_method: string;
     plan_id?: string;
+    split?: CreateSubscriptionSplit;
     statement_descriptor?: string;
 }
